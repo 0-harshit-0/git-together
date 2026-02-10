@@ -63,6 +63,12 @@ _No approval, no merge, no connection._
 > - exits are respected
 
 
+## Opt-in badge [<img src="https://raw.githubusercontent.com/0-harshit-0/0-harshit-0/refs/heads/main/assets/heart.svg" width="21" height="21" alt="git-together ♡" />](https://github.com/0-harshit-0/git-together)
+_Optional. Removable. No obligation._
+
+`[<img src="https://raw.githubusercontent.com/0-harshit-0/0-harshit-0/refs/heads/main/assets/heart.svg" width="21" height="21" alt="git-together ♡" />](https://github.com/0-harshit-0/git-together)`
+
+
 ## What this system optimizes for
 
 - Clear signals over vibes
