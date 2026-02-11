@@ -11,11 +11,6 @@
       </td>
     </tr>
   </table>
-
-  <p>
-    <strong>Git Together</strong> is an informal dating specification on GitHub for finding $$True~Origin$$ through 
-    <i>branching</i>, <i>forking</i>, and <i>merge requests</i>.
-  </p>
 </div>
 
 ## The 3-way handshake
