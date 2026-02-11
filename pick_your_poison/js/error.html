@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Will you be my valentine?</title>
+<style>
+  :root{
+    --bg:#fff6f8;
+    --card:#ffffff;
+    --accent:#e63946;
+    --muted:#6b6b6b;
+  }
+
+  html,body{
+    height:100%;
+    margin:0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    background: radial-gradient(circle at 10% 10%, #ffeef2 0%, var(--bg) 40%, #f7f3ff 100%);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+
+  .card{
+    background:var(--card);
+    padding:36px;
+    border-radius:14px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+    max-width:540px;
+    width:92%;
+    text-align:center;
+  }
+
+  h1{
+    margin:0 0 10px 0;
+    font-size:30px;
+    color:#222;
+    line-height:1.05;
+    letter-spacing:0.2px;
+  }
+
+  p.sub{
+    margin:0 0 22px 0;
+    color:var(--muted);
+  }
+
+  .buttons{
+    display:flex;
+    gap:14px;
+    justify-content:center;
+    align-items:center;
+  }
+
+  button{
+    min-width:130px;
+    padding:12px 20px;
+    border-radius:12px;
+    border:0;
+    font-size:16px;
+    cursor:pointer;
+    user-select:none;
+  }
+
+  .yes{
+    background:linear-gradient(180deg, var(--accent), #c6283a);
+    color:#fff;
+    box-shadow: 0 8px 20px rgba(230,57,70,0.16);
+  }
+
+  .no{
+    background:transparent;
+    border:2px dashed #d6d6d6;
+    color:#333;
+  }
+
+  button:focus{
+    outline:4px solid rgba(230,57,70,0.12);
+    outline-offset:2px;
+  }
+
+  @media (prefers-reduced-motion: no-preference){
+    button{ transition: transform .16s ease, box-shadow .16s ease; }
+    button:hover{ transform: translateY(-4px); }
+  }
+</style>
+</head>
+<body>
+  <main class="card" role="main" aria-labelledby="question">
+    <h1 id="question">Will you be my valentine?</h1>
+    <p class="sub">Choose wisely</p>
+    <div class="buttons">
+      <button id="yesBtn" class="yes" aria-label="Yes">Yes</button>
+      <button id="noBtn" class="no" aria-label="No">No</button>
+    </div>
+  </main>
+
+  <script>
+    (function(){
+      const yesBtn = document.getElementById('yesBtn');
+      const noBtn = document.getElementById('noBtn');
+      const repoUrl = 'https://github.com/0-harshit-0/git-together?tab=readme-ov-file#the-3-way-handshake';
+
+      yesBtn.addEventListener('click', function(){
+        window.location.href = repoUrl;
+      }, {passive:true});
+
+      noBtn.addEventListener('click', function(){
+        const banner = [
+          "╔════════════════════════════════════════════════════════════╗",
+          "║  💔  oh no, you picked no  — dramatic confetti for one  💥  ║",
+          "╚════════════════════════════════════════════════════════════╝"
+        ].join('\n');
+
+        console.error('%c%s', 'font-family:monospace; font-weight:700; color:#ff4d6d; font-size:12px;', banner);
+
+        console.error('%c(╯°□°）╯︵ ┻━┻', 'font-size:16px; color:#8a2be2;');
+      }, {passive:true});
+
+      // keyboard support
+      [yesBtn, noBtn].forEach(btn => {
+        btn.addEventListener('keydown', function(e){
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            btn.click();
+          }
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
