@@ -1,6 +1,22 @@
-# Git Together
-We fork, we PR, we agree, or we don't.
+<div align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Lexend&weight=700&size=60&duration=1&pause=0&repeat=false&color=FFFFFF&center=true&vCenter=true&width=700&height=80&lines=Git+Together" alt="Git Together" />
 
+  <br>
+  <table align="center">
+    <tr>
+      <td>
+        <p align="center">
+          <i>"We fork, we PR, we agree, or we don't. 🥂"</i>
+        </p>
+      </td>
+    </tr>
+  </table>
+
+  <p>
+    <strong>Git Together</strong> is an informal dating specification on GitHub for finding $$True~Origin$$ through 
+    <i>branching</i>, <i>forking</i>, and <i>merge requests</i>.
+  </p>
+</div>
 
 ## The 3-way handshake
 
@@ -66,7 +82,9 @@ _No approval, no merge, no connection._
 ## Opt-in badge [<img src="https://raw.githubusercontent.com/0-harshit-0/0-harshit-0/refs/heads/main/assets/heart.svg" width="21" height="21" alt="git-together ♡" />](https://github.com/0-harshit-0/git-together)
 _Optional. Removable. No obligation._
 
-`[<img src="https://raw.githubusercontent.com/0-harshit-0/0-harshit-0/refs/heads/main/assets/heart.svg" width="21" height="21" alt="git-together ♡" />](https://github.com/0-harshit-0/git-together)`
+```md
+[<img src="https://raw.githubusercontent.com/0-harshit-0/0-harshit-0/refs/heads/main/assets/heart.svg" width="21" height="21" alt="git-together ♡" />](https://github.com/0-harshit-0/git-together)
+```
 
 
 ## What this system optimizes for
@@ -95,4 +113,8 @@ _Optional. Removable. No obligation._
 - If it is not merged, it did not happen.
 
 
-Commit responsibly.
+$$Commit~responsibly.$$
+
+
+> [!NOTE]
+> _The ReadMe might have some AI sentiments as it helped to express human needs but this should not be an issue as the overall agenda is about huamns, not AI!!_
